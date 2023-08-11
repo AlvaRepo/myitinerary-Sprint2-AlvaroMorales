@@ -3,6 +3,7 @@ import { log } from 'console';
 import app from '../app.js';
 import debug from 'debug';
 import http from 'http';
+import { connect } from 'mongoose';        //método par conectarme a la DB
 
 //PORT
 // process.env guarda las confugraciones de la variables de entorno
@@ -11,12 +12,14 @@ import http from 'http';
 let port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
-/**
- * Create HTTP server.
- */
 // START SERVEING
 let server = http.createServer(app);
-let ready = () => console.log('server ready on port '+port);
+let ready = () => {
+  console.log('server ready on port '+port);
+  connect(process.env.LINK_DB)
+    .then(()=>console.log('Base de Datos conectada...'))
+    .catch(err=>console.log(err))    
+}
 server.listen(port, ready);
 server.on('error', onError);
 server.on('listening', onListening);
