@@ -1,9 +1,7 @@
 import 'dotenv/config.js';
 import { connect } from 'mongoose';
-
 import City from '../City.js';
 import User from '../User.js';
-
 const cities = [{
     country: "Cambodia",
     fundation: "1113-01-01",
@@ -125,7 +123,6 @@ const cities = [{
     featuredLocation: "Salah Al Din",
     admin_id: "cin@mh.com"
 }]
-
 async function createCities(arrayCities) {
     try {
         await connect(process.env.LINK_DB)
@@ -135,10 +132,9 @@ async function createCities(arrayCities) {
             city.admin_id = admin_id                                //reasigno el valor del admin_id de cada ciudad para cambiar el mail que viene por default POR LO QUE CORRESPONDE (QUE SERIA EL ID)
             await City.create(city)
         }
-        console.log('done!');
+    console.log('done! cities');
     } catch (error) {
         console.log(error);
     }
 }
-
 createCities(cities)
