@@ -1,7 +1,6 @@
 import 'dotenv/config.js';
 import { connect } from 'mongoose';
-import User from '../user.js';
-
+import User from '../User';
 const users = [{
     name: "Ignacio",
     lastName: "Borraz",
@@ -24,8 +23,6 @@ const users = [{
     password: "Hola1234",
     country: "Argentina"
 }]
-
-
 connect(process.env.LINK_DB)
     .then(()=>{
         User.insertMany(users)
