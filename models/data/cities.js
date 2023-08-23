@@ -4,7 +4,7 @@ import City from '../City.js';
 import User from '../User.js';
 const cities = [{
     country: "Cambodia",
-    fundation: "1113-01-01",
+    foundation: "1113-01-01",
     population: 120000,
     photo: "https://i.im.ge/2022/08/31/OE8zGY.cambodia.png",
     city: "Siem Reap",
@@ -14,7 +14,7 @@ const cities = [{
     admin_id: "igna@mh.com"
 },{
     country: "Indonesia",
-    fundation: "1945-08-17",
+    foundation: "1945-08-17",
     population: 4230051,
     photo: "https://i.im.ge/2022/08/31/OE8kcM.baliTemple.png",
     city: "Bali",
@@ -24,7 +24,7 @@ const cities = [{
     admin_id: "igna@mh.com"
 },{
     country: "Tahiti",
-    fundation: "1722-01-01",
+    foundation: "1722-01-01",
     population: 10605,
     photo: "https://i.im.ge/2022/08/31/OE8fih.boraBora.png",
     city: "Bora Bora Island",
@@ -34,7 +34,7 @@ const cities = [{
     admin_id: "igna@mh.com"
 },{
     country: "Venezuela",
-    fundation: "1764-05-22",
+    foundation: "1764-05-22",
     population: 407452,
     photo: "https://i.im.ge/2022/08/31/OE8VX8.canaimaBolivar.png",
     city: "Bolívar",
@@ -44,7 +44,7 @@ const cities = [{
     admin_id: "cin@mh.com"
 },{
     country: "Japan",
-    fundation: "1952-01-01",
+    foundation: "1952-01-01",
     population: 104000000,
     photo: "https://i.im.ge/2022/08/31/OE8ZKX.japanHonshuIsland.png",
     city: "Honshu Island",
@@ -54,7 +54,7 @@ const cities = [{
     admin_id: "cin@mh.com"
 },{
     country: "Maldives Republic",
-    fundation: "1965-07-26",
+    foundation: "1965-07-26",
     population: 540542,
     photo: "https://i.im.ge/2022/08/31/OE8p7D.maldives.png",
     city: "Maldives Islands",
@@ -64,7 +64,7 @@ const cities = [{
     admin_id: "cin@mh.com"
 },{
     country: "Argentina",
-    fundation: "1927-12-07",
+    foundation: "1927-12-07",
     population: 6143,
     photo: "https://i.im.ge/2022/08/31/OE8vA4.peritoMorenoCalafate.png",
     city: "El Calafate",
@@ -74,7 +74,7 @@ const cities = [{
     admin_id: "cin@mh.com"
 },{
     country: "Australia",
-    fundation: "1788-01-26",
+    foundation: "1788-01-26",
     population: 5312000,
     photo: "https://i.im.ge/2022/08/31/OE8JpC.sidney.png",
     city: "Sydney",
@@ -84,7 +84,7 @@ const cities = [{
     admin_id: "fran@mh.com"
 },{
     country: "Mexico",
-    fundation: "1325-06-20",
+    foundation: "1325-06-20",
     population: 212500,
     photo: "https://i.im.ge/2022/08/31/OE842q.tenochtitlan.png",
     city: "Tenochtitlan",
@@ -94,7 +94,7 @@ const cities = [{
     admin_id: "fran@mh.com"
 },{
     country: "Chile",
-    fundation: "1928-01-01",
+    foundation: "1928-01-01",
     population: 165593,
     photo: "https://i.im.ge/2022/08/31/OE8Bwp.torresDelPaineMagallanesRegion.png",
     city: "Magallanes Region",
@@ -104,7 +104,7 @@ const cities = [{
     admin_id: "fran@mh.com"
 },{
     country: "Africa",
-    fundation: "1964-10-24",
+    foundation: "1964-10-24",
     population: 19473125,
     photo: "https://i.im.ge/2022/08/31/OE8GKP.victoriaFallsZambia.png",
     city: "Zambia",
@@ -114,7 +114,7 @@ const cities = [{
     admin_id: "cin@mh.com"
 },{
     country: "Egypt",
-    fundation: "0969-01-01",
+    foundation: "0969-01-01",
     population: 9540000,
     photo: "https://i.im.ge/2022/08/31/OERMl1.salahCitadelCairoCity.png",
     city: "Cairo Citadel",
@@ -122,13 +122,44 @@ const cities = [{
     smalldescription: "Visiting the Cairo Citadel is one of the best things to do around the area of Islamic Cairo",
     featuredLocation: "Salah Al Din",
     admin_id: "cin@mh.com"
-}]
+},{
+    country: "Greece",
+    foundation: "1830-01-01",
+    population: 10741165,
+    photo: "https://i.im.ge/2022/08/31/OE8zGY.cambodia.png",
+    city: "Athens",
+    description: "Athens is the capital and largest city of Greece. It is one of the world's oldest cities, with a recorded history spanning over 3,400 years. Athens is widely considered the cradle of Western civilization and the birthplace of democracy. It is known for its rich history, classical architecture, and contributions to philosophy, mathematics, and the arts.",
+    smalldescription: "Explore the historic landmarks of Athens, including the Acropolis, Parthenon, and ancient agora.",
+    featuredLocation: "Acropolis of Athens",
+    admin_id: "igna@mh.com"
+},{
+    country: "Canada",
+    foundation: "1867-07-01",
+    population: 37642500,
+    photo: "https://i.im.ge/2022/08/31/OE8kcM.baliTemple.png",
+    city: "Toronto",
+    description: "Toronto is the capital city of the Canadian province of Ontario. It is Canada's most populous city and a global center for business, finance, arts, and culture. Toronto is known for its diverse population, iconic landmarks like the CN Tower, and vibrant neighborhoods.",
+    smalldescription: "Experience the cultural diversity and modern attractions of Toronto, from its museums to culinary scene.",
+    featuredLocation: "CN Tower",
+    admin_id: "igna@mh.com"
+},{
+    country: "Spain",
+    foundation: "1469-01-01",
+    population: 47351567,
+    photo: "https://i.im.ge/2022/08/31/OE8fih.boraBora.png",
+    city: "Barcelona",
+    description: "Barcelona is a vibrant city in northeastern Spain known for its art, architecture, and Mediterranean beaches. It is famous for Antoni Gaudí's masterpieces like the Sagrada Família and Park Güell. Barcelona offers a unique blend of Gothic and modernist architecture, bustling markets, and a lively cultural scene.",
+    smalldescription: "Discover the artistic and architectural wonders of Barcelona, including Gaudí's iconic creations.",
+    featuredLocation: "Sagrada Família",
+    admin_id: "igna@mh.com"
+}
+]
 async function createCities(arrayCities) {
     try {
         await connect(process.env.LINK_DB)
         for (let city of arrayCities) {
             let user = await User.findOne({ mail:city.admin_id })   //busco el usuario que conincida el mail del objeto
-            let admin_id = await user._id                           //SOLO necesito el id de ese usuario
+            let admin_id = user._id                           //SOLO necesito el id de ese usuario
             city.admin_id = admin_id                                //reasigno el valor del admin_id de cada ciudad para cambiar el mail que viene por default POR LO QUE CORRESPONDE (QUE SERIA EL ID)
             await City.create(city)
         }

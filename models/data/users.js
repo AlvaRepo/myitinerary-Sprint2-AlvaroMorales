@@ -1,6 +1,6 @@
 import 'dotenv/config.js';
 import { connect } from 'mongoose';
-import User from '../User';
+import User from '../User.js';
 const users = [{
     name: "Ignacio",
     lastName: "Borraz",

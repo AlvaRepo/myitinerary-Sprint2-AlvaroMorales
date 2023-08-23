@@ -1,0 +1,17 @@
+import User from "../../models/User.js";
+
+export default async (req, res, next) => {
+
+    try {
+      let newUser = await User.create(req.body)
+    return res.status(201).json({
+      succes: true,
+      message: 'user created',
+      response: newUser._id
+    })
+  } catch (error) {
+    next(error)
+  }
+
+  
+  }

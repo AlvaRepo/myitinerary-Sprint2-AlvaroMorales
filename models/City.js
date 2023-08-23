@@ -4,7 +4,7 @@ let collection = "cities";
 
 let schema = new Schema({
     country: {type:String, required:true} ,
-    fundation: {type:Date,required:true},
+    foundation: {type:Date,required:true},
     population: {type:Number},
     photo: {type:String, required:true},
     city: {type:String, required:true},
@@ -12,6 +12,8 @@ let schema = new Schema({
     smalldescription: {type:String, default:"Edit later"},
     featuredLocation: {type:String, default:"Edit later"},
     admin_id: {type:Types.ObjectId, required:true, ref:'users'}
+},{
+    timestamps: true
 })
 
 let City = model(collection, schema)
