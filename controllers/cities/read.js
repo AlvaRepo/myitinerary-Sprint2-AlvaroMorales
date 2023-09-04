@@ -4,8 +4,8 @@ export default async (req, res, next) => {
     try {
         let sortObject = {}
         let searchObject = {}
-        if (req.query.admin_id) {
-            searchObject.admin_id = req.query.admin_id
+        if (req.query.admin_id) { //si existe esa consulta
+            searchObject.admin_id = req.query.admin_id // le agrego la propiedad con el valor de "req"
         }
         if (req.query.city){ 
             searchObject.city = new RegExp('^' + req.query.city, 'i') // 

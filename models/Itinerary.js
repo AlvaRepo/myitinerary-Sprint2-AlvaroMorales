@@ -8,8 +8,10 @@ let schema = new Schema({
     price: { 
             type: Number, 
             required: true },
-    duration: { type: Number },
-    tags: {  type:[ String ] } ,
+    duration: { 
+        type: Number,
+        required: true },
+    tags: [{  type: String, required:true  }] ,
     photo: {
         type: String,
         require: true,
@@ -19,7 +21,8 @@ let schema = new Schema({
         required: true,
         ref: "cities",
     },
+}, {
+    timestamps:true
 });
-//test 
 let Itinerary = model(collection, schema);
 export default Itinerary;

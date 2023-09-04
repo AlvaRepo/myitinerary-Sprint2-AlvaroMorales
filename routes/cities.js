@@ -5,6 +5,7 @@ import read from '../controllers/cities/read.js';
 import readOne from '../controllers/cities/readOne.js';
 import destroy from '../controllers/cities/destroy.js';
 import carousel from '../controllers/cities/carousel.js';
+import readOneCard from '../controllers/cities/readOneCard.js'
 
 let router = express.Router();
 
@@ -14,7 +15,9 @@ router.post('/', create);
 // READ
 router.get('/', read);
 router.get('/carousel', carousel)
+
 router.get('/:city_id', readOne);
+router.get('/:city_id', readOneCard);
 // UPDATE
 router.put('/:c_id', update);
 // DELETE
