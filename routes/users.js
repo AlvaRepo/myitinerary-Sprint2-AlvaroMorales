@@ -5,20 +5,20 @@ import read from '../controllers/users/read.js';
 import readOne from '../controllers/users/readOne.js';
 import destroy from '../controllers/users/destroy.js';
 
-let router = express.Router();
+let userRouter = express.Router();
 
 //CREATE
-router.post('/', create )
+userRouter.post('/signup', create )
 //READ
-router.get('/:user_id', readOne)
+userRouter.get('/:user_id', readOne)
 //UPDATE 
-router.put('/:u_id', update)
+userRouter.put('/:u_id', update)
 //DELETE
-router.delete('/:id', destroy )
+userRouter.delete('/:id', destroy )
 
 //GET
-router.get('/', read )
+userRouter.get('/', read )
 //PUT
-router.put('/', update )
+userRouter.put('/', update )
 
-export default router
+export default userRouter
